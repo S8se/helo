@@ -72,8 +72,8 @@ section1:addToggle("Anchored", nil, function(value)
 end)
 Fly = false
 function activatefly()
-    local mouse=game.Players.LocalPlayer:GetMouse''
-    localplayer=game.Players.LocalPlayer
+    local mouse =game.Players.LocalPlayer:GetMouse''
+    local player =game.Players.LocalPlayer
     game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
     local torso = game.Players.LocalPlayer.Character.HumanoidRootPart
     local speedSET=25
@@ -90,7 +90,7 @@ function activatefly()
         gyro.cframe = torso.CFrame
         repeat
             wait()
-            localplayer.Character.Humanoid.PlatformStand=true
+            LocalPlayer.Character.Humanoid.PlatformStand=true
             local new=gyro.cframe - gyro.cframe.p + pos.position
             if not keys.w and not keys.s and not keys.a and not keys.d then
                 speed=1
@@ -130,7 +130,7 @@ function activatefly()
             pos:Destroy() 
         end
         flying=false
-        localplayer.Character.Humanoid.PlatformStand=false
+        LocalPlayer.Character.Humanoid.PlatformStand=false
         speed=0
     end
     e1=mouse.KeyDown:connect(function(key)
@@ -318,6 +318,9 @@ Other:addButton("Destroy UI", function()
             v:Destroy()
         end
     end    
+end)
+Other:addKeybind("Toggle Keybind", Enum.KeyCode.RightControl, function()
+    venyx:toggle()
 end)
 -- load
 venyx:SelectPage(venyx.pages[1], true)
