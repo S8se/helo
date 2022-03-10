@@ -160,7 +160,7 @@ function activatefly()
     end)
     start()
 end
-section1:addToggle("Fly",nil , function(vu) 
+section1:addToggle("Fly [R6]",nil , function(vu) 
     Fly = vu
     activatefly()
 end)
