@@ -1,6 +1,6 @@
 -- init
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GreenDeno/Venyx-UI-Library/main/source.lua"))()
-local venyx = library.new("DEV.TOOLS UNIVERSAL", 5013109572)
+local venyx = library.new("555", 5013109572)
 local LocalPlayer = game.Players.LocalPlayer
 local Char = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 local HumRoot = Char.HumanoidRootPart
@@ -311,7 +311,7 @@ end
 
 Other:addButton("Destroy UI", function()
     for k, v in next, game:GetService("CoreGui"):GetChildren() do
-        if v.Name == "DEV.TOOLS UNIVERSAL" then
+        if v.Name == "5" then
             v:Destroy()
         end
     end    
