@@ -1,4 +1,0 @@
-local LocalPlayer = game.Players.LocalPlayer
-local Char = LocalPlayer.Character
-local HumRoot = Char.HumanoidRootPart
-HumRoot.CFrame = CFrame.new(Vector3 or CFrame value; Which is a number not string)
