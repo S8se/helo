@@ -311,7 +311,7 @@ end
 
 Other:addButton("Destroy UI", function()
     for k, v in next, game:GetService("CoreGui"):GetChildren() do
-        if v.Name == "5" then
+        if v.Name == "555" then
             v:Destroy()
         end
     end    
